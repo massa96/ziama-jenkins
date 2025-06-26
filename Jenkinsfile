@@ -11,5 +11,10 @@ pipeline {
              }
              
            }
+           stage("Checkout from SCM") {
+             steps{
+               git branch: 'main', credentialsId: 'git-token', url: 
+             }
+           }
          }
 }
