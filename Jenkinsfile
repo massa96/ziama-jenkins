@@ -13,7 +13,7 @@ pipeline {
            }
            stage("Checkout from SCM") {
              steps{
-               git branch: 'main', credentialsId: 'git-token', url: 'https://github.com/massa96/ziama-jenkins'
+               git branch: 'main', credentialsId: 'github', url: 'https://github.com/massa96/ziama-jenkins'
              }
            }
            
